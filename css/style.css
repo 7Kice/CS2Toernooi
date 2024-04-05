@@ -1,0 +1,501 @@
+:root{
+    --PrimaryColor:rgba(2, 20, 43, 1);
+    --SecondaryColor:rgb(25, 52, 78);
+    --TertiaryColor:rgba(220, 230, 238, 1);
+    --BodyColor:rgb(245, 245, 245); 
+    --BodyHeight:calc(100vh - 95px);
+}
+
+body {
+    background-color: var(--BodyColor);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    height: 75px;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--PrimaryColor);
+    color: #fff;
+    padding: 10px;
+}
+
+.header img{
+    height: 75px;
+}
+
+.nav{
+    display: flex;
+    grid-column: 2;
+    justify-content: right;
+}
+
+.nav a {
+    height: fit-content;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: auto 5px;
+    border-radius: 5px;
+    background-color: var(--TertiaryColor);
+}
+
+.nav a:hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; /* Two auto-sized rows for logo and content */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: start; /* Align items at the start of the grid container */
+}
+
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    grid-column: 1; /* Positioned in the first column (left side) */
+}
+
+.box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--SecondaryColor);
+    color: #ffffff;
+}
+
+
+.box-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--TertiaryColor);
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* Main Image Styles */
+.main-image {
+    position: relative;
+    background-image: url('../Images/indeximage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    max-width: 60%;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image-overlay h2 {
+    font-size: 40px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+.image-overlay p {
+    font-size: 20px; /* Adjust the font size as needed */
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    min-width: 300px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.grid-container >.grid-item {
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    background-color: #fff; /* Set the background color of the grid item */
+}
+
+.grid-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:nth-child(1)::before {
+    background-image: url('../Images/DollarNote.png');
+}
+
+.grid-item:nth-child(2)::before {
+    background-image: url('../Images/database.png');
+}
+
+.grid-item:nth-child(3)::before {
+    background-image: url('../Images/Attack.png');
+}
+
+.grid-item:nth-child(4)::before {
+    background-image: url('../Images/Privacy.png');
+}
+
+.grid-item h2,
+.grid-item p {
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Move text content above the pseudo-element */
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ Styles */
+.faq-container {
+    max-width: 800px;
+    margin: auto auto 20px auto; /* Center horizontally and vertically */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text */
+}
+.faq-question {
+    cursor: pointer;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-question.active {
+    background-color: #ddd;
+}
+
+.faq-question::after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 18px;
+    color: #555;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-question.active::after {
+    content: "\02212"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--PrimaryColor);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 15px 0 0; /* Adjust the top margin for spacing */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+/* Login and Admin Styles */
+.LoginContainer,
+.AdminContainer {
+    display: flex;
+    height: calc(var(--BodyHeight) - 106px);
+}
+
+
+.LoginForm,
+.AdminPanel {
+    background-color: #fff;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 1);
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
+.LoginForm h1,
+.PanelName {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.LoginForm input[type="text"],
+.LoginForm input[type="password"] {
+    background-color: rgb(238, 238, 238);
+    min-width: 220px;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    margin: 10px 0 10px 0;
+    box-sizing:border-box;
+}
+
+.LoginForm .MarginBottom {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    padding: 10px;
+    min-width: 220px;
+    background-color: var(--TertiaryColor);
+}
+.LoginForm > input[type="submit"]{
+    min-width: 220px;
+}
+
+.LoginForm > input[type="submit"], .RegisterButton, .LogoutButton{
+    background-color: white;
+    border-radius: 6px;
+    float: right;
+    border: 1px solid black;
+    padding: 4px 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.LogoutButton{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.gap{
+    float: left;
+}
+
+.AdminPanel {
+    margin: auto;
+    height: 75%;
+    width: 75%;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 2rem 1fr;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+    background-color: rgb(236, 236, 236);
+}
+
+.PanelName {
+    margin: 0;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.AdminContent {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1/3;
+    border-radius: 6px;
+    gap: 5px;
+    grid-template-columns: repeat(autofill, 1fr);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.FirstName{
+    grid-column: 1;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.LastName{
+    text-align: center;
+    border: 1px solid black;
+    grid-column: 2;
+    border-radius: 6px;
+}
+
+.WebsiteURL{
+    text-align: center;
+    grid-column: 4;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.CompanyName{
+    text-align: center;
+    grid-column: 3;
+    grid-row: 1;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.FirstNameText,
+.LastNameText,
+.CompanyNameText,
+.WebsiteURLText {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px 0;
+    border-radius: 6px;
+}
+
+.FirstNameData, .LastNameData, .CompanyNameData, .WebsiteURLData {
+    font-size: 1.2rem;
+    margin:10px 0 0  0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.ErrorMessage{
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 50px; /* Added margin-bottom to create more space at the bottom */
+}
+
+.contact-container form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.contact-container label {
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.contact-container button {
+    background-color: var(--TertiaryColor);
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: #ccc;
+}
