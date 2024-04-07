@@ -5,19 +5,21 @@ require("create-database.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $email = $_POST["email"];
-    $firstName = $_POST["firstName"];
-    $lastName = $_POST["lastName"];
-    $companyName = $_POST["companyName"];
-    $websiteUrl = $_POST["websiteUrl"];
+    $teamName = $_POST["team_name"];
+    $player1 = $_POST["player1"];
+    $player2 = $_POST["player2"];
+    $player3 = $_POST["player3"];
+    $player4 = $_POST["player4"];
+    $player5 = $_POST["player5"];
 
     // Insert data into the table
-    $sql = "INSERT INTO security_test (email, firstName, lastName, companyName, websiteUrl) VALUES ('$email', '$firstName', '$lastName', '$companyName', '$websiteUrl')";
+    $sql = "INSERT INTO signup (email, teamName, player1, player2, player3, player4, player5) VALUES ('$email', '$teamName', '$player1', '$player2', '$player3', '$player4', '$player5')";
 
     if ($db_conn->query($sql) === TRUE) {
-        header("Location: securitytest.php");
+        header("Location: your_success_page.php"); // Change to your desired success page
         exit();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $db_conn->error;
     }
 }
 

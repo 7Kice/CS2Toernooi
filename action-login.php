@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $hashedPassword = $row["password"];
 
         if (password_verify($password, $hashedPassword)) {
-            header("Location: admin-panel.php");
+            header("Location: admin.php");
             exit();
         } else {
             $_SESSION['error'] = "Either the username or password is incorrect";

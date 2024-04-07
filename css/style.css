@@ -46,86 +46,179 @@ body {
     background-color: #ccc;
 }
 
-main {
-    padding: 20px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto; /* Two auto-sized rows for logo and content */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-items: start; /* Align items at the start of the grid container */
-}
-
-
-.info {
+.info-boxes {
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    grid-column: 1; /* Positioned in the first column (left side) */
+    justify-content: center; /* Horizontally centers the boxes */
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line if needed */
 }
 
-.box {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--SecondaryColor);
-    color: #ffffff;
+.custom-box {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #272a33; /* Set the background color for all boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
 }
 
-
-.box-title {
-    font-size: 18px;
+.custom-box .box-title {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: white;
+}
+
+.custom-box .box-text {
+    font-size: 16px;
+    color: white;
+}
+
+
+.bottom-button {
+    display: block;
+    margin: 20px auto; /* Centers the button horizontally */
+    padding: 10px 20px; /* Add padding to the button */
+    width: 1450px; /* Make the button wider */
+    text-align: center; /* Centers the text inside the button */
+    background-color: #ff7324; /* background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Font size */
+}
+
+.bottom-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.signup-top{
+    padding: 80px;
+}
+
+.signup-bottom{
+    padding: 80px;
+}
+
+/* Styles for the tournament bracket generator */
+.tournament-bracket {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
+    /* Add any additional styles specific to the tournament bracket section */
 }
 
-.box-text {
-    font-size: 14px;
-    line-height: 1.6;
+.tournament-bracket h1 {
+    /* Add any styles for the heading */
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.tournament-bracket form {
+    margin-top: 20px;
+    /* Add any styles for the form */
 }
 
-label {
-    margin-bottom: 8px;
+.tournament-bracket label {
+    display: block;
+    margin-bottom: 10px;
+    /* Add any styles for labels */
 }
 
-input,
-textarea {
+.tournament-bracket input[type="number"] {
+    width: 50px;
+    text-align: center;
+    /* Add any styles for number inputs */
+}
+
+.tournament-bracket button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* Add any styles for buttons */
+}
+
+.form-container {
+    width: 400px;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Add this line */
+  }
+  
+  /* You can keep the existing styles */
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    font-weight: bold;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
+    padding: 8px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-button {
-    background-color: var(--TertiaryColor);
-    padding: 10px 20px;
-    border: 1px solid #ccc;
+  }
+  
+  .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .form-top{
+    padding:40px;
+  }
+
+  .form-bottom{
+    padding:50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
-button:hover {
-    background-color: #ccc;
+.bracket-box {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
 
 /* Main Image Styles */
 .main-image {

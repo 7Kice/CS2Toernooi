@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";  
-$dbname = "SecurityChief";
+$dbname = "CSTourney";
 
 $conn = new mysqli($servername, $username, $password);
 
@@ -31,13 +31,15 @@ if ($db_conn->query($sql) === TRUE) {
     echo "Error creating table: " . $db_conn->error;
 }
 
-$sql2 = "CREATE TABLE IF NOT EXISTS security_test (
+$sql2 = "CREATE TABLE IF NOT EXISTS signup (
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL,
-    firstName VARCHAR(50) NOT NULL,
-    lastName VARCHAR(50) NOT NULL,
-    companyName VARCHAR(100),
-    websiteUrl VARCHAR(255)
+    teamName VARCHAR(100) NOT NULL,
+    player1 VARCHAR(50) NOT NULL,
+    player2 VARCHAR(50) NOT NULL,
+    player3 VARCHAR(50) NOT NULL,
+    player4 VARCHAR(50) NOT NULL,
+    player5 VARCHAR(50) NOT NULL
 )";
 if ($db_conn->query($sql2) === TRUE) {
 } else {
