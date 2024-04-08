@@ -13,7 +13,7 @@
 <?php
     include('header.php')
     ?>
-
+<div class="main-wrapper">
 <main>
     <div class="signup-container">
         <div class="info-boxes">
@@ -52,7 +52,7 @@
     </div>
 
 </main>
-
+</div>
 
 
     <?php

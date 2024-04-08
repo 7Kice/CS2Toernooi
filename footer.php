@@ -7,5 +7,5 @@
         <!-- Add more social media icons as needed -->
     </div>
 
-    <p>&copy; 2024 Security Chief. All rights reserved. | Designed by <a href="http://localhost/SecurityChief/#" target="_blank">Security Design Team</a></p>
+    <p>&copy; 2024 CS2 Tournament. All rights reserved. | Designed by <a href="http://localhost/De Company/#" target="_blank">De Company Design Team</a></p>
 </footer>

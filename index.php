@@ -13,62 +13,41 @@
     <?php
     include('header.php')
     ?>
-
-
+<div class="main-wrapper">
 
     <!-- Main Image Section -->
     <div class="main-image">
         <div class="image-overlay">
             <h2>CS2 Toernooi</h2>
             <p>Klik hieronder om aan te melden!</p>
-            <button class="new-button">Aanmelden</button>
-            <button class="new-button">Meer info</button>
+            <button href="signup.php" class="new-button">Aanmelden</button>
+            <button href="toernooi.php" class="new-button">Meer info</button>
         </div>
     </div>
 
     <!-- Grid Section -->
     <div class="grid-container">
         <div class="grid-item">
-            <img class="RobinCool" src="./img/Erebezoeker_RobinKool.jpeg">
-            <h2>Cyber Crime Costs</h2>
-            <p>Cybercrime is prediced to cost $8 trillion in 2023.</p>
+            <a href="https://liquipedia.net/counterstrike/Ropz" target="_blank">
+                <img class="RobinCool" src="./img/Erebezoeker_RobinKool.jpeg" alt="Robin Kool">
+            </a>
+            <h2>Robin Kool</h2>
+            <p>Professional Esports Player van CS2</p>
         </div>
         <div class="grid-item">
-            <h2>Data Breach</h2>
-            <p>Over 33 billion records will be stolen by cyber criminals by 2023.</p>
+            <a href="https://liquipedia.net/counterstrike/S1mple" target="_blank">
+                <img class="S1mple" src="./img/Erebezoeker_S1mple.jpg" alt="S1mple">
+            </a>
+            <h2>S1mple</h2>
+            <p>Professional Esports Player van CS2</p>
         </div>
     </div>
 
-    <!-- FAQ Section -->
-    <div class="faq-container">
-        <h2>Frequently Asked Questions</h2>
-        <?php include('faq-content.php'); ?>
-    </div>
+</div>
 
     <?php
     include('footer.php')
     ?>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var faqQuestions = document.querySelectorAll('.faq-question');
-
-            faqQuestions.forEach(function(question) {
-                var answer = question.nextElementSibling;
-                answer.style.display = 'none'; // Close all answers by default
-
-                question.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    if (answer.style.display === 'block' || answer.style.display === '') {
-                        answer.style.display = 'none';
-                    } else {
-                        answer.style.display = 'block';
-                    }
-                });
-            });
-        });
-    </script>
-
 
 </body>
 

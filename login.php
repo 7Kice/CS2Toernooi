@@ -10,6 +10,7 @@
 
 <body>
     <?php include('header.php') ?>
+<div class="main-wrapper">
     <div class="LoginContainer">
         <form class="LoginForm" action="action-login.php" method="POST">
             <h1 class="MarginBottom">Login</h1>
@@ -29,6 +30,7 @@
             <a class="RegisterButton gap" href="index.php">Back</a>
         </form>
     </div>
+</div>
     <?php include('footer.php') ?>
 </body>
 

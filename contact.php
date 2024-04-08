@@ -10,7 +10,7 @@
 
 <body>
     <?php include('header.php') ?>
-
+<div class="main-wrapper">
     <div class="contact-container">
         <h1>Contact Us</h1>
         <form action="process_contact.php" method="post">
@@ -26,7 +26,7 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-
+</div>
     <?php include('footer.php') ?>
 </body>
 

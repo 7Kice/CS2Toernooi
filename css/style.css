@@ -13,6 +13,13 @@ body {
     font-family: Arial, sans-serif;
     background-image: url(../img/background.png);
     background-repeat: repeat;
+    height: 100%;
+}
+
+.main-wrapper { /* or 'body' if you don't use a wrapper */
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
 }
 
 button{
@@ -300,6 +307,7 @@ li {
     transition: transform 0.3s ease-in-out;
     position:relative;
     max-width: 50%;
+    color: white;
     justify-self: center;
     background-color: var(--PrimaryColor); /* Set the background color of the grid item */
 }
@@ -308,8 +316,8 @@ li {
     width: 100%;
 }
 
-.grid-item:nth-child(2)::before {
-    background-image: url('../img/Erebezoeker_S1mple.jpg')'
+.S1mple{
+    width: 100%;
 }
 
 .grid-item h2,
@@ -373,6 +381,7 @@ li {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    margin-top: auto; /* Pushes the footer down */
 }
 
 .footer p {
