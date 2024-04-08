@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security test</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +17,7 @@
 <main>
 
 <div class="tournament-bracket">
-    <h1>Tournament Bracket Generator</h1>
+    <h1>Generate Tournament Round</h1>
     <form action="generate_bracket.php" method="post">
         <label for="num_teams">Number of Teams:</label>
         <input type="number" id="num_teams" name="num_teams" min="2" required>
