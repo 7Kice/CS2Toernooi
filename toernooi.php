@@ -15,7 +15,6 @@
     ?>
 
 <main>
-    <div class="signup-top"></div>
     <div class="signup-container">
         <div class="info-boxes">
             <div class="custom-box">
@@ -51,7 +50,6 @@
             <button class="bottom-button">Aanmelden</button>
         </a>
     </div>
-    <div class=signup-bottom></div>
 
 </main>
 
