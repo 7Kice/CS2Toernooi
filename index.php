@@ -19,28 +19,23 @@
     <!-- Main Image Section -->
     <div class="main-image">
         <div class="image-overlay">
-            <h2>Security Cybercrime Test Site</h2>
-            <p>Discover our website to see what we can do for you!</p>
+            <h2>CS2 Toernooi</h2>
+            <p>Klik hieronder om aan te melden!</p>
+            <button class="new-button">Aanmelden</button>
+            <button class="new-button">Meer info</button>
         </div>
     </div>
 
     <!-- Grid Section -->
     <div class="grid-container">
         <div class="grid-item">
+            <img class="RobinCool" src="./img/Erebezoeker_RobinKool.jpeg">
             <h2>Cyber Crime Costs</h2>
             <p>Cybercrime is prediced to cost $8 trillion in 2023.</p>
         </div>
         <div class="grid-item">
             <h2>Data Breach</h2>
             <p>Over 33 billion records will be stolen by cyber criminals by 2023.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Cyber Attacks</h2>
-            <p>Cyber attacks happen once every 39 seconds.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Data Privacy</h2>
-            <p>47% of American adults have had their personal information exposed.</p>
         </div>
     </div>
 
