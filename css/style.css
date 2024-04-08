@@ -112,6 +112,7 @@ button{
 }
 
 .tournament-bracket h1 {
+    color: white;
     /* Add any styles for the heading */
 }
 
@@ -123,6 +124,7 @@ button{
 .tournament-bracket label {
     display: block;
     margin-bottom: 10px;
+    color: white;
     /* Add any styles for labels */
 }
 
@@ -142,7 +144,7 @@ button{
 .form-container {
     width: 400px;
     padding: 40px;
-    background-color: #f0f0f0;
+    background-color: #272a33;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto; /* Add this line */
@@ -153,10 +155,12 @@ button{
   .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
   }
   
   .form-container label {
     font-weight: bold;
+    color: white;
   }
   
   .form-container input[type="text"],
@@ -172,7 +176,7 @@ button{
   .form-container input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #ff7324;
     color: white;
     border: none;
     border-radius: 4px;
