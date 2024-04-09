@@ -52,6 +52,7 @@ button{
 
 .nav a {
     height: fit-content;
+    font-weight: bold;
     text-decoration: none;
     color: white;
     padding: 10px;
