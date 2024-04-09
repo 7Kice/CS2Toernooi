@@ -43,6 +43,26 @@
         </div>
     </div>
 
+    <!-- New Image and Information Block -->
+    <div class="grid-container">
+  <!-- Other grid items -->
+
+  <div class="grid-item info-block">
+        <img src="./img/Informatie_Gaming_Foto.jpg" alt="Descriptive Text for Accessibility">
+        <div class="info-text">
+            <h3>Informatie Over CS2 Toernooi</h3>
+            <p>Het CS2-toernooi is een jaarlijks evenement georganiseerd door het Vista College. Het brengt fans en spelers van het spel Counter-Strike 2 samen. Elk jaar komen er bekende spelers die veel geld hebben gewonnen met het spel. 
+
+            Een bekende speler is Robin Kool, die in het team FaZe Clan zit. Hij is erg goed in CS2 en veel mensen kijken naar hem op. Een andere top speler is s1mple van Team Falcon. Hij is ook heel bekend en heeft veel prijzen gewonnen.
+
+            Het toernooi is niet alleen een wedstrijd, maar ook een plek waar mensen die van games houden elkaar kunnen ontmoeten. Met beroemde spelers zoals Robin en s1mple trekt het toernooi veel aandacht. Het is een belangrijk evenement voor iedereen die van esports houdt.</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
 </div>
 
     <?php
