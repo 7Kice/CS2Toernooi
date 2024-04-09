@@ -41,6 +41,7 @@ button{
 
 .header img{
     height: 75px;
+    margin-left: 7%;
 }
 
 .nav{
@@ -333,47 +334,57 @@ li {
     transform: scale(1.05);
 }
 
-/* FAQ Styles */
-.faq-container {
-    max-width: 800px;
-    margin: auto auto 20px auto; /* Center horizontally and vertically */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center text */
+.info-block {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    min-width: 300px;
+    max-width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+  }
+.info-block {
+flex-direction: column;
+text-align: center;
 }
-.faq-question {
-    cursor: pointer;
-    background-color: #f4f4f4;
+  
+.info-block img {
+margin: 0 auto;
+max-width: 100%;
+} 
+
+  .grid-item.info-block {
+    display: grid;
+    flex-flow: column;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+    border: 1px solid var(--PrimaryColor);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position:relative;
+    max-width: 80%;
+    min-width: 50%;
+    color: white;
+    justify-self: center;
+    background-color: var(--PrimaryColor); 
+  }
+  
+  .info-block h3 {
+    color: var(--primary-color); /* Primary color for headings */
+    text-align: center;
+  }
+  
+  .info-block p {
+    color: var(--secondary-color); /* Secondary color for paragraph text */
+  }
+
+  .grid-item.info-block:hover {
+  background-color: var(--highlight-background); /* Highlight or accent color on hover */
+  transform: scale(1.05); /* Optional: makes the block slightly grow */
 }
 
-.faq-answer {
-    display: none;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.faq-question.active {
-    background-color: #ddd;
-}
-
-.faq-question::after {
-    content: "\02795"; /* Unicode character for "plus" sign (+) */
-    font-size: 18px;
-    color: #555;
-    float: right;
-    margin-left: 5px;
-}
-
-.faq-question.active::after {
-    content: "\02212"; /* Unicode character for "minus" sign (-) */
-}
+  
 
 /* Footer Styles */
 .footer {
