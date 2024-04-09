@@ -52,7 +52,7 @@ button{
 .nav a {
     height: fit-content;
     text-decoration: none;
-    color: #333;
+    color: white;
     padding: 10px;
     margin: auto 5px;
     border-radius: 5px;
@@ -578,15 +578,17 @@ li {
 .contact-container {
     max-width: 600px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     border: 1px solid #000;
     border-radius: 5px;
     background: var(--PrimaryColor);
-    margin-bottom: 50px; /* Added margin-bottom to create more space at the bottom */
 }
 
 .contact-container form {
     display: grid;
+    padding: 10px;
     grid-gap: 10px;
 }
 
@@ -597,7 +599,8 @@ li {
 .contact-container input,
 .contact-container textarea {
     width: 100%;
-    padding: 8px;
+    padding-bottom: 100px;
+    padding-right: 500px;
     box-sizing: border-box;
 }
 
